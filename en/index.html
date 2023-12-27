@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>宋英楷的主页</title>
+</head>
+<body>
+
+<header>
+    <h1>Yingkai Song</h1>
+    <p>欢迎访问我的网站。我叫宋英楷，是一名海外应届硕士毕业生。我品学兼优，爱好广泛，具备创造力，
+        拥有涵盖<strong>经济学</strong>和<strong>计算机科学</strong>的多元学术背景和优秀的工程能力。期待认识您！</p>
+</header>
+
+<section id="contact">
+    <h2>基本信息和联系方式</h2>
+    <p>电子邮件: yingkaisong99@gmail.com</p>
+    <p>电话: (+31)0623284557</p>
+    <p>出生日期: 1999年8月15日</p>
+    <p>英语水平：大学英语六级 - 606分；托福 - 108分；GRE - 327分</p>
+    <p>GitHub主页: <a href="https://github.com/KaikaiSong99">github.com/KaikaiSong99</a></p>
+</section>
+
+<section id="education">
+    <h2>教育背景</h2>
+    <p><strong>计算机科学硕士，代尔夫特理工大学</strong>，荷兰<br>2021年9月 — 现在</p>
+    <p><strong>信息安全学士，中央财经大学</strong>，北京<br>2017年9月 — 2021年6月<br>平均成绩：<strong>89分 </strong></p>
+</section>
+
+<section id="projects">
+    <h2 onclick="toggleProjects('projectsContent')">项目经验 ▼</h2>
+    <div id="projectsContent" style="display: block">
+        <h3>开发者 / （进行中）交互式t-SNE优化过程可视化，代尔夫特理工大学</h3>
+        <p>2023年6月 — 现在</p>
+        <img src="../resources/t-sne.png" alt="Interactive t-SNE Optimization Visualization" width="400" height="300" class="centered-image">
+        t-SNE是一种强大的基于邻域的非线性降维算法，适用于从高维数据中提取复杂的结构和聚类。t-SNE广泛适用于一般的高维数据：例如，研究者已经使用它处理流式细胞仪数据，
+        并且通过聚类结果佐证细胞类别的判定。t-SNE聚类的形成过程甚至被用来推断细胞分化过程。然而，即使具备丰富的信息，t-SNE聚类的形成（即算法的优化过程）较少被研究。
+        此项目设计了一款通用的视觉分析系统，其焦点集中在类似 t-SNE 的降维算法的优化过程上，为高维数据的深入探索提供了一种连贯而深刻的体验。
+        通过概念化并设计一系列多样化的视觉表达，根据人类视觉感知和认知进行定制，该系统适用于各种类型的高维数据。
+        为了验证论文中提出的细胞分化假设，我们引入了一个交互式机制，用于可视化分析和处理超过40,000个高维流式细胞样本，这些样本来自最新研究。
+        目前，我们正将开发的系统无缝集成到名为ManiVault Studio的开源可视化分析框架中，以拓展交互式高维数据分析功能。
+        <br>
+        <h3>项目组领导者 / 基于图的协同过滤推荐系统异常检测，代尔夫特理工大学</h3>
+        <p>2023年4月 — 2023年7月</p>
+        <img src="../resources/core-AB.png" alt="Interactive t-SNE Optimization Visualization" width="400" height="300" class="centered-image">
+        推荐系统对于基于用户偏好发现新内容至关重要，依赖于现有评分系统。在协同过滤中，计算用户相似性以获得可靠的建议，存在恶意行为的可能性。
+        此项目调整了以检测社交网络异常的Core-A算法，以识别用户-项目二分图中的虚假攻击。所提出的Core-AB算法为节点计算DMP分数，
+        通过修改，如合并边缘、探索排名策略，并考虑基于最密子图的方法（DSM），解决了一些涉及二分图结构限制。
+        项目的贡献在于将Core-A调整为二分图，展示在检测虚假攻击方面的有效性，能够改善在线系统中的信任问题。
+        在项目开发过程中，我领导项目组进行面向协同过滤的异常检测系统的研究和设计，实现了多种攻击策略以模拟非法用户行为，拓展了现有研究，
+        提出用于二分图异常检测的core-AB算法。该系统准确检测到4种攻击策略中的3种，在较大范围内具有超过0.9的F1分数。
+        <br>
+        <h3>项目组领导者 / 可视化工具 "PowerViz"，代尔夫特理工大学</h3>
+        <p>2022年11月 — 2023年1月</p>
+        <img src="../resources/powerViz.png" alt="Interactive t-SNE Optimization Visualization" width="400" height="300" class="centered-image">
+        力量举是一项全球性的强度运动，涉及以预定方式举起杠铃，包括深蹲、卧推和硬拉三个组成部分。
+        尽管它表面上看起来是一项纯粹的力量运动，但知识、编程和分析扮演着至关重要的角色。
+        此项目专注于力量举运动员的表现提升，利用Open Powerlifting的比赛数据集构建了一个可视化工具。
+        此项目尝试解决了两个领域问题： 如何检查和追踪运动员的表现并将其与整体人口进行比较、哪些地区提供了最佳的个人发展环境？
+
+        在项目开发过程中，我领导项目组使用D3、JavaScript、HTML和CSS构建了一个Web可视化工具，用于识别和监测举重运动员的表现。
+        实现了散点图、箱线图和世界举重地图以分析所有的荷兰的力量举运动员数据，用于数值型和类别型数据，为用户提供了高交互性和
+        定位数据点、发现和探索数据分布、识别趋势、比较特征和相似性的自由。
+        <br>
+        <h3>项目组领导者 / 无人机市场分析ATMOS UAV，代尔夫特理工大学</h3>
+        <p>2022年4月 — 2022年7月</p>
+        <img src="../resources/Business%20Model%20Canvas.png" alt="Analysis on Atmos UAV" width="400" height="300" class="centered-image">
+        在代尔夫特理工大学就读期间，我与团队同科技、政策与管理学院合作，对初创公司ATMOS  UAV进行了详细分析。
+        ATMOS是一家技术先进的地理空间创业公司，由一支年轻、创新和专注解决问题的团队支持，总部位于荷兰的莱顿市。
+        他们专注于高质量、符合行业标准的测量和制图垂直起降（VTOL）无人机，能够在最恶劣的天气条件下操作。
+        我们研究了ATMOS的机会分析和价值主张、讨论了ATMOS的学术衍生品、成长阶段和扩散模式、考察了他们面临的关键转折点以及最有前途的细分市场、研究了他们可持续和循环商业模型。
+        研究产出了机会分析画布、价值主张画布和可持续商业模型画布和详尽的分析报告与演说。此项工作提升和展示了我对于涉及研究团队新技术开发的调研能力、数据分析能力和可视化能力。
+        <br>
+        <h3>开发者 & UI设计师 / 严肃游戏 "Stranded"，代尔夫特理工大学</h3>
+        <p>2021年11月 — 2022年2月</p>
+        <img src="../resources/stranded.png" alt="Interactive t-SNE Optimization Visualization" width="400" height="300" class="centered-image">
+        对不同群体的潜在偏见在我们社会的许多领域中越来越受到关注。认识到这些偏见是一项困难的任务，因为偏见是潜意识的，以及被回避的。
+        我们提出了一款名为《Stranded》的严肃游戏，玩家在其中被引导去揭示和认识可能存在的直观偏见。
+        玩家面临着受现实世界中诱发偏见情境启发的挑战，在这些情境中，他们必须在有限的时间和知识下为认为适合特定任务的人分组，而这是在一个团队生存的背景下进行的。
+        每轮结束后，通过小提示透露出每个任务的理想人选；最终，如果玩家忽略这些提示并依赖先前的偏见，他们将无法在挑战中生存下来。
+        这激励玩家更深入地考虑角色的内在优势，而不是先前的偏见。《Stranded》是引发有趣课堂讨论的有效工具，通过匿名收集所有玩家的决策，并显示每项任务的综合结果，
+        很容易引发有关某些决策动机的对话。《Stranded》的评估表明，它有效地促使玩家做出带有偏见的判断，并且相当一部分玩家在玩游戏后感到更加意识到他们的偏见。
+        在此项目中，我参与构思并实现了一个交互式的严肃游戏，贡献了产品的数据展示逻辑，完善了UI组件，保障了功能的无缝集成。
+        我还积极推进敏捷开发迭代过程，专注于优化用户交互，通过持续的改进和可用性测试增强了整体用户体验。最终项目在 ISAGA2022 会议上正式展示。
+        <br>
+        <h3>研究助理 / 基于孪生卷积神经网络的虹膜识别，中央财经大学，北京</h3>
+        <p>2019年10月 — 2020年3月</p>
+        <img src="../resources/iris.png" alt="Interactive t-SNE Optimization Visualization" width="400" height="300" class="centered-image">
+        机器学习的可解释性是一个新兴且富有意义的领域。此项目作为一项可解释性研究的前期工作，以虹膜数据为基础，构建了一个完整的数据采集、标注、训练、分类的pipeline。
+        在此项目中，我设计并构建了一个孪生卷积神经网络（CNN），利用自采集的虹膜数据，展示了一个有效的生物特征识别系统。
+        由于采集到的数据是原始、无标记的，我为数据标记步骤开发了一个用户友好的前端应用：采用了 HTML、 JavaScript和 Django 的组合，
+        产出了一个交互式、视觉上直观的图形用户界面，确保了高效的数据标注。
+        最后，通过PyTorch和OpenCV实现虹膜识别。
+    </div>
+    <!-- Repeat the structure for other projects -->
+</section>
+
+<section id="internships">
+    <h2 onclick="toggleProjects('internshipContent')">实习经历 ▼</h2>
+    <div id="internshipContent" style="display: block">
+        <h3>软件工程实习生 / 申通快递平台开发（阿里巴巴项目组），上海</h3>
+        <p>2020年6月 — 2020年9月</p>
+        <ul>
+            <li>参与中国第三大物流公司的数字化进程，进行了分布式数据处理平台的开发和数据库升级工作。</li>
+            <li>开发基于 Java 的 API，参与了与前端开发人员的交流和开发会议，增强了平台的功能和效率。</li>
+            <li>承担对各种商业可用的分布式数据库系统的评估工作，提供了一份全面的技术报告，从而为平台增强的战略决策提供了信息。</li>
+        </ul>
+        <br>
+        <h3>投行部实习生 / 申万宏源集团债券发行项目，北京</h3>
+        <p>2019年6月 — 2019年9月</p>
+        <ul>
+            <li>参与可交换债券项目的发行，负责前期财务核算和行业研究。</li>
+            <li>进行母公司和多个子公司的财务数据的全面编制和精确计算。</li>
+            <li>参与目标公司的信用验证流程，促进金融交易中的明智决策。</li>
+            <li>撰写有洞察力的研究报告，向关键利益相关方呈现目标公司和相关机构的财务信息。</li>
+        </ul>
+    </div>
+</section>
+
+<section id="extraCurricular">
+    <h2 onclick="toggleProjects('extraCurricularContent')">课外经历 ▼</h2>
+    <div id="extraCurricularContent" style="display: block">
+        <h3>一等奖，美国大学生数学竞赛，北京</h3>
+        2020年2月，我在中央财经大学与统计与数学系合作，参加了美国大学生数学竞赛，获得了一等奖。我们的项目通过设计建模一个基于图结构的迭代算法，
+        结合了PageRank算法和数值特征，成功将一个复杂的足球比赛的数据集转化为一个简洁的图结构，实现了整体的优化。
+        <img src="../resources/mcm.jpg" alt="美赛一等奖" width="300" height="200" class="centered-image">
+        <br>
+        <h3>运动员，荷兰力量举协会，荷兰</h3>
+        2022年至今，我代表代尔夫特理工大学参加了三次国家级别的力量举（Powerlifting）比赛。力量举是一项集力量、技巧和耐力于一身的运动，通过长期
+        刻苦且有计划的训练和比赛，我获得了出色的体能和体质，同时也培养了坚韧精神和冷静的头脑。
+        <img src="../resources/powerlifitng.jpg" alt="荷兰全国大学生运动会" width="300" height="200" class="centered-image">
+        <br>
+        <h3>组织者，青年志愿者行动指导中心，中央财经大学，北京</h3>
+        2017-2019年，我在中央财经大学青年志愿者行动指导中心参与学生工作，组织并参加了北京长跑节半程马拉松、北京海洋馆、人工耳蜗学校、太阳村农场产生的志愿者工作，为社会公益事业做出了贡献。
+        <img src="../resources/qingzhi.jpg" alt="北京长跑节半程马拉松志愿者" width="300" height="200" class="centered-image">
+        <img src="../resources/qingzhi2.jpg" alt="青年志愿者" width="300" height="200" class="centered-image">
+        <br>
+        <h3>组织者，学生会体育部，中央财经大学，北京</h3>
+        2017-2019年，我在体育部参与学生工作，组织并参加多次校运动会、校内篮球赛、冬季校园长跑等活动，多次担任比赛裁判，为学校的体育建设做出了贡献，并且全面发展了德智体水平。
+        <img src="../resources/tiyubu.jpg" alt="体育部组织、参与篮球赛" width="300" height="200" class="centered-image">
+        <br>
+        <h3>联络员-世界银行，第二届一带一路国际合作高峰论坛，北京</h3>
+        “一带一路”峰会期间，我作为72名志愿者之一，参与了资金融通分论坛30余个国家的政府和相关组织代表的全程联络接待和会场引导等服务保障工作。
+        作为世界银行的联络员，工作语言为全英文，每一个时间点和行程路线需准确把握、无缝衔接，平均每天12个小时的工作时间需应对和解决很多突发情况和
+        复杂问题，工作难度大、责任重， 保密要求高，体现了上级团组织和对接服务单位对我校志愿者政治素质和综合能力的高度信任和认可。
+        <img src="../resources/beltandroad.jpg" alt="一带一路峰会" width="300" height="200" class="centered-image">
+
+
+    </div>
+</section>
+
+<!-- Add more sections as needed -->
+
+<footer>
+    <p>Contact me: yingkaisong99@gmail.com / (+31)0623284557</p>
+</footer>
+
+<script>
+    function toggleProjects(id) {
+        var content = document.getElementById(id);
+        var arrow;
+        if (id === "projectsContent") {
+            arrow = document.querySelector("#projects h2");
+        } else if (id === "internshipContent") {
+            arrow = document.querySelector("#internships h2");
+        }
+        else {
+            arrow = document.querySelector("#extraCurricular h2");
+        }
+
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+            if (id === "projectsContent") {
+                arrow.innerHTML = "项目经验 ▼";
+            } else if (id === "internshipContent") {
+                arrow.innerHTML = "实习经历 ▼";
+            } else {
+                arrow.innerHTML = "课外经历 ▼";
+            }
+        } else {
+            content.style.display = "none";
+            if (id === "projectsContent") {
+                arrow.innerHTML = "项目经验 ▶";
+            } else if (id === "internshipContent") {
+                arrow.innerHTML = "实习经历 ▶";
+            } else {
+                arrow.innerHTML = "课外经历 ▶";
+            }
+        }
+    }
+</script>
+</body>
+</html>
